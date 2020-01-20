@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700,300);
+
+html,
+h1{
+    color:black;
+    background-color: white
+    font-size:20cm;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+p{
+    color:black;
+    background-color: white
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;     
+}
+.button{
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.button span{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    top: 50%;
+    left:50%;
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+    background: #eeeeee;
+    box-shadow: 0 0 0 0 rgba(0, 0,0, 0.26);
+    transition: ease .3s;
+}
+.button span: hover{
+    padding: 10px;
+}
+/*1*/
+.color1 button span{
+    background-color:rgb(129, 3, 3);
+}
+
+/*2*/
+.color2 .button span{
+    background: rgb(111, 34, 255);
+}
+/*3*/
+.color3 .button span{
+    background:#040404;
+}
+/*4*/
+.color4 .button span{
+    background: #FFFFFF
+}
+/*5*/
+.color5 .button span{
+    background: #FF5722;
+}
+/*6*/
+.color6 .button span{
+    background: rgb(251, 255, 34);
+}
+/*7*/
+.color7 .button span{
+    background: #355391;
+}
+/*8*/
+.color8 .button span{
+    background: #74819e;
+}
+/*9*/
+.color9 .button span{
+    background: #E2A6E6;
+}
+/*10*/
+.color10 .button span{
+    background: #FF5722;
+}
+/*11*/
+.color11 .button span{
+    background: rgb(34, 255, 63);
+}
+/*12*/
+.color12 .button span{
+    background: rgb(255, 34, 200);
+}
+/*13*/
+.color13 .button span{
+    background: #BEC0C0;
+}
+/*14*/
+.color14 .button span{
+    background: #509163;
+}
+/*15*/
+.color15 .button span{
+    background: #A0A9A3;
+}
+/*16*/
+.color16.button span{
+    background: #D3572F ;
+}
+/*17*/
+.color17 .button span{
+    background: #A9EAF1;
+}
+/*18*/
+.color18 .button span{
+    background: #C8CCC9;
+}
+
+/*SECTION 2*/
+/*add to cart*/
+
+button{
+    font-family:'',sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    border: 0;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+    
+    button:nth-cart(2){
+        margin 0.5em;
+    }
+    
+    button:hover{
+        background: rgba(0,0,0,0.3);
+        
+    }
+    button:active{
+        background: rgba(0,0,0,0.5);
+    }
+    /* #add:active{
+        -webkit-transform: translateY(-1em);
+    }
+    #subtract:active{
+        -webkit-transform: translateX(1em);
+    } */
+
+}
