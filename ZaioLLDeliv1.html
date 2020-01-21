@@ -3,7 +3,12 @@
 <head>  
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <title>
         <strong> HICKIES Originals </strong>
     </title>  
@@ -14,128 +19,112 @@
         <h1><strong> HICKIES Originals </strong></h1>
         <form action ="">
            <!-- check bootstrap for star ratings -->
-            <!-- <span>&#9733;</span>
-            <span>&#9733;</span> 
-            <span>&#9733;</span>
-            <span>&#9733;</span> -->
-
+        
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
             
-            <em style="color: gray;"> 1,293 reviews</em>
-            <h2><a style="COLOR: #e70808;">$14.99  </a></h2>
+            <a style="color: gray;"> 1,293 reviews</a>
+            <h2><a style="COLOR: #e70808;">$14.99</a></h2>
             <p style="color: gray;"> $17.99 <strong>25%OFF</strong></p>
             
-            <label for="COLOR"> COLOR: </label> 
-            <input type="text" name="color" id="COLOR">
+            <label for="COLOR"> COLOR:</label> 
+            <a id="colorname"></a>
+            <input type="label" id="colorname" />
+            <!-- x = myColor.fullName();
+            document.getElementById("myColor").innerHTML = x;  -->
+            <p></p>  
+              
             <!-- either use javascript(function onclick) to change Aaaaalll these functions you called here OR use an array read it .. find -->
-            <!--1-->
-            <label class ="color1">
-                <div class="layer"></div>
-                <div class="button"><span></span></div>
-            </label>
-            <!--2-->
-            <label class="color2">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--3-->
-            <label class="color3">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--4-->
-            <label class="color4">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--5-->
-            <label class="color5">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--6-->
-            <label class="color6">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--7-->
-            <label class="color7">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--8-->
-            <label class="color8">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--9-->
-            <label class="color9">
-                <span class="layer"></div>
-                <span class="button"><span></span></div>
-            </label>
-            <!--10-->
-            <label class="color10">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--11-->
-            <label class="color11">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-             <!--12-->
-             <label class="color12">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--13-->
-            <label class="color13">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--14-->
-            <label class="color14">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--15-->
-            <label class="color15">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--16-->
-            <label class="color16">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--17-->
-            <label class="color17">
-                <span class="layer"></span>
-                <span class="button"><span></span></span>
-            </label>
-            <!--18-->
-            <label class="color18">
-                <span class="button"><span></span></span>
-                <span class="button"><span></span></span>
-            </label>
-                        
-        <!-- SECTION 3-->
-        <div id="counter"></div>
-        <div class="button">
-            <button id="subtract" >-10</button> <!--use javascript to set specs remember min fuction-->
-            <button id="reset">Reset</button>
-            <!--rather look at using input tags cos with this you'd to add the specs in javascript-->
-            <button id="add">+10</button>
-        </div>
-       <!-- use javascript instead for addToCart button(document.getelementbyclassname) -->
-       <!-- check variable in java script -->
-        <button class="button AddtoCart">Add to Cart </button>
 
+            <!--1--> <button class="brown" onclick="myColor"></button>
+            <!--2--> <button class="blue" onclick="myColor"></button>
+            <!--3--> <button class="black" onclick="myColor"></button>
+            <!--4--> <button class="white" onclick="myColor"></button>
+            <!--5--> <button class="red" onclick="myColor"></button>
+            <!--6--> <button class="yellow" onclick="myColor"></button>
+            <!--7--> <button class="midnightblue" onclick="myColor"></button>
+            <!--8--> <button class="plum" onclick="myColor"></button>
+            <!--9--> <button class="powderblue" onclick="myColor"></button>
+            <!--10--> <button class="springgreen" onclick="myColor"></button>
+            <!--11--> <button class="palevioletred" onclick="myColor"></button>
+            <p></p>
+            <!--12--> <button class="burlywood" onclick="myColor"></button>
+            <!--13--> <button class="teal" onclick="myColor"></button>
+            <!--14--> <button class="darkolivegreen" onclick="myColor"></button>
+            <!--15--> <button class="slategrey" onclick="myColor"></button>
+            <!--16--> <button class="darkgreen" onclick="myColor"></button>
+            <!--17--> <button class="turquoise" onclick="myColor"></button>
+            <!--18--> <button class="lightgray" onclick="myColor"></button>
+            <p></p>                     
+        
+        <p><strong> Size </strong></p>
+        <p><strong> Your Custom Fit </strong></p>        
+        
+        <!-- Trigger modal -->
+        <!-- <button onclick="myAddToCart()">Add to Cart</button> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addToCartModal">
+        Add to Cart
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addToCartModalLabel">Please add the quantity of the item you've selected</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+             
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button id="down" class="btn btn-default" onclick=" down('0')"><span class="glyphicon glyphicon-minus"></span></button>
+                        </div>
+                        <input type="label" id="myCart" class="form-control input-number" value="myColor"  />
+                        <div class="input-group-btn">
+                            <button id="up" class="btn btn-default" onclick="up('10')"><span class="glyphicon glyphicon-plus"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <hr>
+        <p></p>  
+        <p><strong> Details </strong></p></p>
+        <p></p>
+        
+        <!-- SECTION 3-->
+         
+        <!--use javascript to set specs remember min fuction-->
+        <!--rather look at using input tags cos with this you'd to add the specs in javascript-->
+        <!-- use javascript instead for addToCart button(document.getelementbyclassname) -->
+        <!-- check variable in java script -->
+
+        <p></p>
+        <hr>
+        <p></p>
         <!-- SECTION 4-->
-    <input type="submit" name="Agree" value="Submit Form"/>
-</form>
-       
-    <!--span tag below -->
-    
+        <!--just chose any url-->
+        <a href="https://launchlab-portal.firebaseapp.com/dashboard">Need Help?</a>  
+        <p></p>      
+        <a href="https://launchlab-portal.firebaseapp.com/task/CKNZkGNWipGbYA8aEZao">Shipping Returns</a> 
+        <p></p> 
+</form>    
+     
     </body>       
 
 </html>
+
+<script src="./myJavascriptStuff.js"></script>
